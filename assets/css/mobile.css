@@ -1,0 +1,160 @@
+/* 320px, 480px, 768px, 1024px, and 1200px */
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.cover {
+		height: 200px;
+		background: url('../images/bg-2.png') right bottom no-repeat,
+			linear-gradient(
+				102deg,
+				#043caa 0.68%,
+				#416cbf 42.29%,
+				rgba(18, 71, 175, 0) 100%
+			),
+			url('../images/bg-1.png') right no-repeat;
+		background-size: 50%, contain, contain;
+	}
+
+	.header {
+		display: block;
+	}
+
+	.logo {
+		margin-top: 10px;
+	}
+
+	.button__login {
+		margin-top: 20px;
+		display: block;
+		margin-left: 0;
+	}
+
+	.navigation-menu {
+		display: none;
+	}
+
+	.navigation-menu-mobile-button {
+		color: white;
+		left: 10px;
+		top: 10px;
+		position: relative;
+		border: none;
+		background: transparent;
+	}
+
+	.navigation-menu-mobile {
+		position: fixed;
+		display: block;
+		visibility: hidden;
+		top: 0;
+		left: -200px;
+		width: 200px;
+		height: 100%;
+		transition: 0.3s;
+		background-color: #043caa;
+	}
+
+	.navigation-menu-mobile a:first-child {
+		margin-top: 50px;
+	}
+
+	.navigation-menu-mobile a {
+		display: block;
+		text-decoration: none;
+		font-size: 10px;
+		letter-spacing: 1.5px;
+		word-spacing: 2%;
+		margin: 30px 10px;
+		color: white;
+	}
+
+	#hamburger-input {
+		display: none;
+	}
+
+	#hamburger-input:checked + .navigation-menu-mobile {
+		visibility: visible;
+		left: 0;
+	}
+
+	.product-menu,
+	.search-widget-wrapper,
+	.cover__heading,
+	.cover__subheading {
+		display: none;
+	}
+
+	.affliations__image {
+		margin: 0;
+	}
+
+	.benifits {
+		margin: 0 50px;
+	}
+
+	.benifits-container {
+		display: block;
+		margin: 0;
+	}
+
+	.benifits__heading {
+		margin-top: 50px;
+	}
+
+	.benifits__graphic {
+		display: none;
+	}
+
+	.benifits__list__prescription-button {
+		padding: 11px 15px;
+	}
+
+	.clients {
+		display: block;
+	}
+
+	.clients img {
+		margin: 0 10vw;
+	}
+
+	.clients__wrapper {
+		margin: 10vw;
+	}
+
+	.subscribe-widget-wrapper {
+		display: inline-flex;
+	}
+
+	.subscribe-bar {
+		width: auto;
+	}
+
+	.send-bar-icon {
+		display: none;
+	}
+
+	.footer {
+		padding: 0 12vw;
+	}
+
+	.footer__section-one, .footer__section-two, .footer__section-two__links {
+		display: inline-block;
+	}
+
+	.footer__section-one__newsletter {
+		padding: 10vw 0;
+	}
+
+	.footer__section-one__newsletter div {
+		width: auto;
+	}
+
+	.footer__section-two__links__container {
+		margin: 30px 0 0;
+	}
+
+	.footer___developed-by {
+		margin: 30px 0 0;
+		position: relative;
+		bottom: 0;
+	}
+}

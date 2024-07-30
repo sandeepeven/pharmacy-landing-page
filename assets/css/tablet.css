@@ -1,0 +1,105 @@
+/* 320px, 480px, 768px, 1024px, and 1200px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.cover {
+		height: 400px;
+		background: url('../images/bg-2.png') right bottom no-repeat,
+			linear-gradient(
+				102deg,
+				#043caa 0.68%,
+				#416cbf 42.29%,
+				rgba(18, 71, 175, 0) 100%
+			),
+			url('../images/bg-1.png') right no-repeat;
+		background-size: 40%, contain, contain;
+	}
+
+	.navigation-menu {
+		display: inline-flex;
+		margin: 0 10px 0 0;
+	}
+
+	.navigation-menu a {
+		margin: 0 0 0 48px;
+	}
+
+	.navigation-menu-tablet-button {
+		color: white;
+		left: 10px;
+		top: 10px;
+		position: relative;
+		border: none;
+		background: transparent;
+	}
+
+	.navigation-menu-tablet {
+		position: fixed;
+		display: block;
+		visibility: hidden;
+		top: 0;
+		left: -200px;
+		width: 200px;
+		height: 100%;
+		transition: 0.3s;
+		background-color: #043caa;
+	}
+
+	.navigation-menu-tablet a:first-child {
+		margin-top: 50px;
+	}
+
+	.navigation-menu-tablet a {
+		display: block;
+		text-decoration: none;
+		font-size: 10px;
+		letter-spacing: 1.5px;
+		word-spacing: 2%;
+		margin: 30px 10px;
+		color: white;
+	}
+
+	#hamburger-input {
+		display: none;
+	}
+
+	#hamburger-input:checked + .navigation-menu-tablet {
+		visibility: visible;
+		left: 0;
+	}
+
+	.product-menu,
+	.search-widget-wrapper,
+	.navigation-menu-mobile-button {
+		display: none;
+	}
+
+    .benifits {
+		margin: 0 100px;
+	}
+
+    .benifits__graphic {
+		width: 250px;
+		margin: 20px 0;
+	}
+
+	.send-bar-icon {
+		display: none;
+	}
+
+	.footer {
+		padding: 90px 10%;
+	}
+
+	.footer__section-one, .clients {
+		display: inline-block;
+	}
+
+	.subscribe-bar {
+		width: 60%;
+	}
+
+	.footer___developed-by {
+		position: relative;
+		bottom: 0;
+	}
+}

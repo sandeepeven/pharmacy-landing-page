@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Express</title>
+
+    <script src="https://kit.fontawesome.com/f8beafc738.js" crossorigin="anonymous"></script>
+    <script src="vendor/flickity/flickity.pkgd.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap">
+    <link rel="stylesheet" href="vendor/flickity/flickity.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/desktop.css">
+    <link rel="stylesheet" href="assets/css/tablet.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+    <main>
+        <section class="cover">
+            <label for="hamburger-input"
+                class="fa-solid fa-bars navigation-menu-mobile-button navigation-menu-tablet-button">
+                <input type="checkbox" id="hamburger-input" />
+                <div class="navigation-menu-mobile navigation-menu-tablet-button">
+                    <a href="#">Refill Prescription</a>
+                    <a href="#">Buy Medicine</a>
+                    <a href="#">Contact a pharmacist</a>
+                </div>
+            </label>
+            <header class="header">
+                <img class="logo" src="./assets/images/logo.svg" alt="d-express logo" srcset="" size="">
+                <nav class="navigation-menu">
+                    <a href="#">Refill Prescription</a>
+                    <a href="#">Buy Medicine</a>
+                    <a href="#">Contact a pharmacist</a>
+                </nav>
+                <button class="button button__login" type="button">Login</button>
+            </header>
+            <h1 class="cover__heading">We can get your Drug <br /> Prescriptions to You</h1>
+            <h2 class="cover__subheading">We have all the drugs your doctor prescribed for your health <br />and what's
+                more, we can get it to you.</h2>
+            <menu class="product-menu">
+                <li>
+                    <a class="product__item product__item--selected" href="#">Ikeja</a>
+                </li>
+                <li>
+                    <a class="product__item product__item--selected" href="#">VI</a>
+                </li>
+                <li>
+                    <a class="product__item product__item--selected" href="#">Lekki</a>
+                </li>
+                <li>
+                    <a class="product__item product__item--selected" href="#">Ajah</a>
+                </li>
+            </menu>
+            <div class="search-widget-wrapper">
+                <img class="search-bar-icon" src="assets/icons/search_icon.svg" alt="magnifying_glass" srcset="">
+                <input class="search-bar" type="search" placeholder="Seach for drugs in our store" />
+                <button class="search-button" type="button">Find drug</button>
+            </div>
+        </section>
+        <section class="affliations">
+            <h2 class="section__heading">Our Affliations</h2>
+            <hr class="heading__underline" />
+            <div class="affliations__image-container">
+                <img class="affliations__image" src="assets/images/med-1.png" alt="juhel logo" srcset="">
+                <img class="affliations__image" src="assets/images/med-2.png" alt="mzor logo" srcset="">
+                <img class="affliations__image" src="assets/images/med-3.png" alt="gsk logo" srcset="">
+            </div>
+            <h2 class="section__heading">Key Benifits</h2>
+            <hr class="heading__underline" />
+        </section>
+        <section class="benifits">
+            <div class="benifits-container">
+                <ul class="benifits__list">
+                    <h3 class="benifits__heading">All your Medicine <br /> needs in one place</h3>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">Search and find all kind of drugs</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">We have drugs for social case treatments</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">Get notified when your drug is available</span>
+                    </li>
+                    <button class="benifits__list__prescription-button">
+                        Get prescription
+                        <img src="./assets/icons/chevron_right.svg" alt="right arrow">
+                    </button>
+                </ul>
+                <img class="benifits__graphic" src="./assets/images/benifit-1.svg" alt="people laughing at each other">
+            </div>
+            <div class="benifits-container">
+                <img class="benifits__graphic" src="./assets/images/benifit-2.svg" alt="people studying together">
+                <ul class="benifits__list">
+                    <h3 class="benifits__heading">Get your drugs at  <br /> your doorstep</h3>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">Get straigh delivery to your doorstep</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">We deliver within 24hrs of request</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">We guarantee speedily response</span>
+                    </li>
+                    <button class="benifits__list__prescription-button">
+                        Get prescription
+                        <img src="./assets/icons/chevron_right.svg" alt="right arrow">
+                    </button>
+                </ul>
+            </div>
+            <div class="benifits-container">
+                <ul class="benifits__list">
+                    <h3 class="benifits__heading">Set up your profile  <br /> and get refill easily</h3>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">When you are a member your refill is easier</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">With one click your medicine is on it's way</span>
+                    </li>
+                    <li class="benifits__list__item">
+                        <img src="./assets/icons/exclude_icon.svg" alt="list-icon">
+                        <span class="benifits__list-item-text">Select a health care specialist</span>
+                    </li>
+                    <button class="benifits__list__prescription-button">
+                        Get prescription
+                        <img src="./assets/icons/chevron_right.svg" alt="right arrow">
+                    </button>
+                </ul>
+                <img class="benifits__graphic" src="./assets/images/benifit-3.svg" alt="people studying together">
+            </div>
+        </section>
+        <section class="clients">
+            <img
+                src="assets/images/medicines-800w.png"
+                alt="medicines-spilled-on-the-floor"
+                srcset="assets/images/medicines-320w.png 320w, assets/images/medicines-480w.png 420w, assets/images/medicines-800w.png 800w"
+                sizes="(max-width: 480px) 320px, (max-width: 600px) 480px, 800px"
+            >
+            <div class="clients__wrapper">
+                <h2 class="section__heading">What Our Clients Say</h2>
+                <hr class="heading__underline" />
+                <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                    <div class="gallery-cell">
+                        <div>“The ease of delivery is one that I depended on when I was bedriden and could't even walk. Their services is awesome”</div>
+                        <span>- Gerald Maldiliene</span>
+                    </div>
+                    <div class="gallery-cell">
+                        <div>"The doctor of the future will no longer treat the human frame with drugs, but rather will cure and prevent disease with nutrition."</div>
+                        <span> - Thomas Edison</span>
+                    </div>
+                    <div class="gallery-cell">
+                        <div>"The more you understand the power of natural healing, the more you can take healing into your own hands."</div>
+                        <span> - C. Norman Shealy</span>
+                    </div>
+                    <div class="gallery-cell">
+                        <div>"Your body has a natural healing capacity. It's your job to activate that healing potential through healthy living."</div>
+                        <span> - Joel Fuhrman</span>
+                    </div>
+                    <div class="gallery-cell">
+                        <div>"To keep the body in good health is a duty... otherwise, we shall not be able to keep our mind strong and clear."</div>
+                        <span> - Buddha</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__section-one">
+                <div class="footer__section-one__newsletter">
+                    <h4>Sign up for our Newsletter</h4>
+                    <div>Get to know updates in the field of medicine and know how often our stores are stocked</div>
+                </div>
+                <div class="footer__section-one__your-email">
+                    <span>Your Email</span>
+                    <div class="subscribe-widget-wrapper">
+                        <input class="search-bar subscribe-bar" type="text" placeholder="example@email.com" />
+                        <button class="subscribe-button" type="button">Subscribe</button>
+                        <img class="send-bar-icon" src="assets/icons/send_icon.svg" alt="magnifying_glass" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section-two">
+                <div class="footer__section-two__dexpress">
+                    <h4>D-Express</h4>
+                    <div>Your favourite online pharmacy store. We offer onsite delivery and your health is our priority.</div>
+                </div>
+                <div class="footer__section-two__links">
+                    <div class="footer__section-two__links__container">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section-two__links__container">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Purchase</a></li>
+                            <li><a href="#">Consult Specialist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section-two__links__container">
+                        <h5>Social Media</h5>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer___developed-by">developed by sandeepsingh copyright©</div>
+        </footer>
+    </main>
+</body>
+
+</html>

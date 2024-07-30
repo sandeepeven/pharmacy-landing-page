@@ -1,0 +1,406 @@
+:root {
+	--primary: #043caa;
+	--secondary: #1bc768;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#hamburger-input {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Sen, sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #f3f7ff;
+}
+
+.cover {
+	height: 687px;
+	background: url('../images/bg-2.png') right bottom no-repeat,
+		linear-gradient(
+			102deg,
+			#043caa 0.68%,
+			#416cbf 42.29%,
+			rgba(18, 71, 175, 0) 100%
+		),
+		url('../images/bg-1.png') right no-repeat;
+	background-size: 50%, cover, contain;
+}
+
+.header {
+	padding: 35px 0 0 105px;
+	display: flex;
+	align-items: center;
+}
+
+/* .logo {} */
+
+.side-menu {
+	display: none;
+}
+
+.navigation-menu a {
+	margin: 0 0 0 48px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+}
+
+.navigation-menu-mobile {
+	display: none;
+}
+
+.button {
+	padding: 10px 38px;
+	border: none;
+	cursor: pointer;
+}
+
+.button__login {
+	border-radius: 50px;
+	background: var(--secondary);
+	color: white;
+	font-size: 16px;
+	margin: 0 104px 0 auto;
+}
+
+.cover__heading {
+	font-size: 48px;
+	color: white;
+	margin: 104px 0 0 100px;
+	font-weight: 800;
+}
+
+.cover__subheading {
+	font-size: 18px;
+	color: white;
+	margin: 23px 0 0 104px;
+}
+
+.product-menu {
+	display: inline-flex;
+	margin: 44px 0 0 104px;
+	list-style: none;
+	padding: 0;
+}
+
+.product__item {
+	text-decoration: none;
+	padding: 10px 35px;
+	margin: 0 21px 0 0;
+	border-radius: 50px;
+	border: 1px solid white;
+	font-size: 18px;
+	color: white;
+}
+
+.product__item--selected:hover {
+	background-color: white;
+	color: var(--primary);
+}
+
+.search-widget-wrapper {
+	margin: 52px 0 0 104px;
+	position: relative;
+	font-size: 0px;
+}
+
+.search-bar {
+	width: 361px;
+	height: 48px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	padding-left: 40px;
+	border: none;
+	outline: none;
+	background-color: #dee9ff;
+	font-size: 16px;
+	color: #7a7a7a;
+}
+
+.search-bar-icon {
+	position: absolute;
+	left: 11px;
+	top: 12px;
+	height: 24px;
+	width: 24px;
+}
+
+.search-button {
+	width: 127px;
+	background-color: var(--secondary);
+	color: white;
+	font-size: 16px;
+	height: 48px;
+	border: none;
+	outline: none;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	cursor: pointer;
+}
+
+/* .affliations {} */
+
+.section__heading {
+	color: var(--primary);
+	font-size: 36px;
+	padding-top: 94px;
+	text-align: center;
+	margin: 0;
+}
+
+.affliations__image-container {
+	margin-top: 56px;
+	display: flex;
+	justify-content: center;
+}
+
+.affliations__image {
+	width: 123px;
+	height: 51px;
+	margin: 0 5vw 0;
+	object-fit: contain;
+}
+
+.heading__underline {
+	width: 91px;
+	height: 5px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(
+		90deg,
+		var(--primary) 50%,
+		var(--secondary) 50%
+	);
+}
+
+.benifits {
+	margin: 0 211px;
+}
+
+.benifits-container {
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.benifits__heading {
+	color: var(--primary);
+	font-size: 24px;
+	font-weight: 800;
+	margin: 0 0 20px 0;
+}
+
+.benifits__list {
+	margin: 20px 0 0;
+	list-style: none;
+	padding: 0;
+}
+
+.benifits__list__item {
+	margin-top: 20px;
+}
+
+.benifits__list__item:first-child {
+	margin-right: 13px;
+}
+
+.benifits__list__prescription-button {
+	border: 1px solid var(--secondary);
+	border-radius: 50px;
+	background-color: transparent;
+	padding: 11px 35px;
+	font-size: 18px;
+	color: var(--secondary);
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.benifits__list__prescription-button img {
+	vertical-align: middle;
+}
+
+.benifits__list-item__text {
+	color: black;
+	font-size: 18px;
+}
+
+.benifits__graphic {
+	width: 350px;
+}
+
+.clients {
+	margin: 90px 0 138px 0;
+	display: inline-flex;
+	justify-content: flex-start;
+}
+
+.clients img {
+	object-fit: contain;
+}
+
+.clients__wrapper {
+	margin-left: 147px;
+	margin-top: 100px;
+}
+
+.clients__wrapper .section__heading {
+	padding: 0;
+}
+
+.gallery-cell {
+	width: 100%;
+	height: 200px;
+}
+
+.gallery-cell :first-child {
+	font-size: 18px;
+	color: #7A7A7A;
+	margin-top: 48px;
+}
+
+.gallery-cell :nth-child(2) {
+	margin-top: 18px;
+	color: var(--primary);
+}
+
+/* unselected dot */
+.flickity-page-dots .dot {
+	background: #C4C4C4;
+}
+
+/* selected dot */
+.flickity-page-dots .dot.is-selected {
+	background: var(--secondary);
+	justify-self: flex-start;
+}
+
+.flickity-prev-next-button {
+	display: none;
+}
+
+.flickity-page-dots {
+	text-align: left;
+}
+
+.footer {
+	position: relative;
+	background-color: var(--primary);
+	padding: 90px 170px;
+}
+
+.footer__section-one {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.footer__section-one__newsletter h4 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer__section-one__newsletter div {
+	margin: 18px 0;
+	width: 400px;
+}
+
+.footer__section-one__your-email {
+	font-size: 18px;
+}
+
+.subscribe-widget-wrapper {
+	margin: 13px 0 0 0;
+	position: relative;
+	font-size: 0px;
+}
+
+.subscribe-button {
+	width: 156px;
+	background-color: var(--secondary);
+	color: white;
+	font-size: 16px;
+	height: 48px;
+	border: none;
+	outline: none;
+	padding: 0 20px 0 0;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	cursor: pointer;
+}
+
+.send-bar-icon {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	height: 20px;
+	width: 20px;
+}
+
+.footer__section-two {
+	margin: 90px 0 0;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.footer__section-two__dexpress {
+	width: 211px;
+}
+
+.footer__section-two__dexpress h4 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer__section-two__dexpress div {
+	margin: 11px 0;
+}
+
+.footer__section-two__links {
+	width: 62%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+/* .footer__section-two__links__container {} */
+
+.footer__section-two__links__container h5 {
+	font-size: 18px;
+	font-weight: 800px;
+	margin: 0;
+}
+
+.footer__section-two__links__container ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 6px;
+}
+
+.footer__section-two__links__container ul li {
+	margin-top: 15px;
+}
+
+.footer__section-two__links__container ul li a {
+	text-decoration-line: none;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.footer___developed-by {
+	position: absolute;
+	bottom: 17px;
+	color: white;
+}
